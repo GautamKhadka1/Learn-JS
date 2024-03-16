@@ -14,7 +14,7 @@
         #bulbimg{
             width: 100px;
             align-items: center;
-            
+
         }
 
     </style>
@@ -25,8 +25,14 @@
     <button id="bulbbtn" onclick="document.getElementById('bulbimg').src = 'light-on.png'">ON</button><br>
     <img src="light-off.png" id="bulbimg"><BR>
     <button id="bulbbtn" onclick="document.getElementById('bulbimg').src = 'light-off.png'">OFF</button><br>
+    <!-- Js can change the style of HTML Elements -->
+    <button onclick="document.getElementById('text1').style.color = 'red'">ClickMe</button>
+    <p id="text1">Hello don't click me.</p>
+    <!-- js can show and hide an element  -->
+        <img src="light-on.png" id="elem" width="100px" style="display: block;"><br>
 
+        <button onclick="document.getElementById('elem').style.display = 'none'">Hide</button>
+        <button onclick="document.getElementById('elem').style.display = 'block'">Show</button>
 
-    
 </body>
 </html>

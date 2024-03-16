@@ -4,8 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    <style>
+        #bulbbtn{
+            
+            align-content: center;
+
+        }
+        #bulbimg{
+            width: 100px;
+            align-items: center;
+            
+        }
+
+    </style>
 </head>
 <body>
-    Today we are about to learn about JS as wellas git and github.
+    <p>Today we are about to learn about JS as well as git and github.</p><br>
+
+    <button id="bulbbtn" onclick="document.getElementById('bulbimg').src = 'light-on.png'">ON</button><br>
+    <img src="light-off.png" id="bulbimg"><BR>
+    <button id="bulbbtn" onclick="document.getElementById('bulbimg').src = 'light-off.png'">OFF</button><br>
+
+
+    
 </body>
 </html>

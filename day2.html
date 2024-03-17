@@ -9,10 +9,51 @@
             x.innerHTML= "Hello";
         }
     </script>
+    <style>
+        #clickme {
+            background-color: #ffffff;
+            border: solid 1px rgb(4, 129, 33);
+            border-radius: 30px;
+            color: rgb(4, 129, 33);
+            padding: 15px 32px;
+            font-family: "Helvetica Neue",Helvetica,Arial;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            
+        }
+        #clickme:hover {
+            background-color: rgb(4, 129, 33);
+            color: #ffffff;
+        }
+    </style>
     <title>Function in JS</title>
 </head>
 <body>
-    <button type= button onclick="myFunction()">Click Me</button>
+    <button id="clickme" type= button onclick="myFunction()">Click Me</button>
     <p id="display1"></p>
+    <!-- displaying method in JS -->
+    <!-- 1. .innerHTML = "....." -->
+    <!-- 2. alert("....") -->
+    <!-- 3. document.write("....") -->
+    <script>
+        
+
+        function myFunction() {
+            alert('hello world');
+            var x = document.getElementById("display1");
+            x.innerHTML= "Hello";
+            // as document.write  will remove all the content in document and displays the content
+            document.write("Hello"); 
+            
+        }
+        //difference between var and let
+        //var is global variable and let is local variable inside 1 block
+        
+    
+    </script>
 </body>
 </html>

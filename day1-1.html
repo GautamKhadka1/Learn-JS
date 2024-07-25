@@ -1,0 +1,27 @@
+<!-- Create a webpage with a button that, when clicked, displays a random quote from an array of quotes. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1.1</title>
+ </head>
+ <body>
+    <div id= "quote" name="quote"></div>
+    <button onclick="callquote()">Click Me</button>
+    <script>
+        const quotes = [ "The best way to get started is to quit talking and begin doing.",
+    "The pessimist sees difficulty in every opportunity. The optimist sees opportunity in every difficulty.",
+    "Don't let yesterday take up too much of today.",
+    "You learn more from failure than from success. Don’t let it stop you. Failure builds character.",
+    "It’s not whether you get knocked down, it’s whether you get up.", "Be good do good.", "There is alway a light at the end of the tunnel", "Don't justify your actions with your emotion.", "Work hard play hard.", "One man's waste is another man's treasure."];
+        function callquote(){
+            const randomquote = quotes[Math.floor(Math.random()*quotes.length)];
+            //math.random returns random no between 0 & 1 and math floor select floor of floating point number.
+            document.getElementById("quote").innerText = randomquote;
+        }
+    
+    </script>
+    
+ </body>
+ </html>

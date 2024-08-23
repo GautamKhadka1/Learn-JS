@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scissor Paper Rock Game</title>
+</head>
+<body>
+    <script src="Day7_SPR.js"></script>
+    <!-- <img src="Scissor.png">
+    <img src="Scissor.png">
+    <img src="Scissor.png"> -->
+    <div id="top-container">
+        Score Board
+        <div id="pscore">0</div>
+        <div id="cscore">0</div>
+    </div>
+    <div id="main-container">
+        <div id="player">
+            Player
+            <img src="Scissor.png" id="playS" class="img">
+            <img src="Paper.png" id="playP" class="img">
+            <img src="Rock.png" id="playR" class="img">
+        </div>
+        <div id="result"></div>
+        <div id="computer">
+            Computer
+            <img src="Scissor.png" id="compS" class="img">
+            <img src="Paper.png" id="compP" class="img">
+            <img src="Rock.png" id="compR" class="img">
+        </div>
+    </div>
+    <button onclick="game()">Click</button>
+</body>
+</html>

@@ -4,32 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scissor Paper Rock Game</title>
+    <style>
+        .img
+        {
+            height: 55px;
+            width: 55px;
+            padding: 5px 0px;
+            margin:0;
+        }
+        .cbtn{
+            background-color: red;
+            border-radius: 5px;
+            border-style: none;
+        }
+        .pbtn{
+            background-color: rgb(0, 134, 223);
+            border-radius: 5px;
+            border-style: none;
+        }
+        #main-container,#top-container
+        {
+            text-align: center;
+        }
+        .transparent
+        {
+            opacity: 0.15; /* 50% transparency */
+        }
+        
+    </style>
 </head>
 <body>
-    <script src="Day7_SPR.js"></script>
-    <!-- <img src="Scissor.png">
-    <img src="Scissor.png">
-    <img src="Scissor.png"> -->
     <div id="top-container">
         Score Board
         <div id="pscore">0</div>
         <div id="cscore">0</div>
     </div>
     <div id="main-container">
-        <div id="player">
-            Player
-            <img src="Scissor.png" id="playS" class="img">
-            <img src="Paper.png" id="playP" class="img">
-            <img src="Rock.png" id="playR" class="img">
+        <div id="computer">
+            Computer<br>
+            <button id="compS" class="cbtn"><img src="Scissor.png" class="img"></button>
+            <button id="compP" class="cbtn"><img src="Paper.png" class="img"></button>
+            <button id="compR" class="cbtn"><img src="Rock.png" class="img"></button>
         </div>
         <div id="result"></div>
-        <div id="computer">
-            Computer
-            <img src="Scissor.png" id="compS" class="img">
-            <img src="Paper.png" id="compP" class="img">
-            <img src="Rock.png" id="compR" class="img">
+        <div id="player">
+            Player<br>
+            <button id="playS" class="pbtn" onclick="game(this)" value="0"><img src="Scissor.png" class="img"></button>
+            <button id="playP" class="pbtn" onclick="game(this)" value="1"><img src="Paper.png" class="img"></button>
+            <button id="playR" class="pbtn" onclick="game(this)" value="2"><img src="Rock.png" class="img"></button>
         </div>
     </div>
     <button onclick="game()">Click</button>
+    <script src="Day7_SPR.js"></script>
 </body>
 </html>

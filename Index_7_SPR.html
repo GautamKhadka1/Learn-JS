@@ -25,20 +25,36 @@
         #main-container,#top-container
         {
             text-align: center;
+            font-family: poppins;
+            
         }
         .transparent
         {
             opacity: 0.15; /* 50% transparency */
         }
+        #result
+        {
+            font-size: xx-large;
+            font-family: Poppins;
+            padding: 10px;
+        }
+        #btn
+        {
+            background-color: rgb(41, 109, 255);
+            font-family: Poppins;
+            padding: 10px;
+            border-style: none;
+            color: aliceblue;
+            font-weight: medium;
+            border-radius: 5px;
+        }
+
+
         
     </style>
 </head>
 <body>
-    <div id="top-container">
-        Score Board
-        <div id="pscore">0</div>
-        <div id="cscore">0</div>
-    </div>
+    
     <div id="main-container">
         <div id="computer">
             Computer<br>
@@ -46,7 +62,7 @@
             <button id="compP" class="cbtn"><img src="Paper.png" class="img"></button>
             <button id="compR" class="cbtn"><img src="Rock.png" class="img"></button>
         </div>
-        <div id="result"></div>
+        <div></div>
         <div id="player">
             Player<br>
             <button id="playS" class="pbtn" onclick="game(this)" value="0"><img src="Scissor.png" class="img"></button>
@@ -54,7 +70,11 @@
             <button id="playR" class="pbtn" onclick="game(this)" value="2"><img src="Rock.png" class="img"></button>
         </div>
     </div>
-    <button onclick="game()">Click</button>
+    <div id="top-container">
+        <span id="result"></span><br>
+        <button id="btn" onclick="window.location.reload();">New Game</button>
+    </div>
+    
     <script src="Day7_SPR.js"></script>
 </body>
 </html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #main-container
+        {
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 20%;
+            margin-right: 20%;
+            background: rgb(46, 46, 46);
+            padding: 40px;
+            border-radius: 20px;
+            
+        }
+        #btn
+        {
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-family: poppins;
+            font-size: large;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        @font-face{
+            font-family:'DS-Digital Bold';
+            src: URL('DS-DIGII.TTF');
+            
+        }
+        #display
+        {
+            font-size: 100px;
+            color: rgb(220, 23, 23);
+            font-family: 'DS-Digital Bold';
+        
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="container">
+            <div id="display">00:00:00</div>
+        </div>
+        <button id ="btn" onclick="Start()">Start</button>
+        <button id ="btn" onclick="Stop()">Stop</button>
+        <button id ="btn" onclick="Reset()">Reset</button>
+    </div>
+
+    <script src="Day8_clock.js"></script>
+</body>
+
+</html>

@@ -28,6 +28,10 @@ const text = Object.entries(Mom);
 const text2= Object.values(Dad);//same as entries but assign only values of properties as array 
 console.log(text+"");
 console.log(text2+"");
-//property methods
+//property methods defineProperty is used to add or change proprty in object
 Object.defineProperty(Dad, "FirstName", {value:"Gopal"});
 console.log(Dad.Name());
+
+document.getElementById("container").innerHTML = Object.getOwnPropertyNames(Dad);
+Object.defineProperty(Dad, "FirstName", {writable: false});//this make firstname of Dad unchangeable
+

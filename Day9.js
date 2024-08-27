@@ -28,3 +28,6 @@ const text = Object.entries(Mom);
 const text2= Object.values(Dad);//same as entries but assign only values of properties as array 
 console.log(text+"");
 console.log(text2+"");
+//property methods
+Object.defineProperty(Dad, "FirstName", {value:"Gopal"});
+console.log(Dad.Name());

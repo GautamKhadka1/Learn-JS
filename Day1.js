@@ -25,6 +25,7 @@ divhtml.removeAttribute("id");
 console.log(divhtml.dataset);
 divhtml.dataset.test="This is changed dataset.";
 console.log(divhtml.dataset);
+document.get
 
 //now to manipulate style through JS
 

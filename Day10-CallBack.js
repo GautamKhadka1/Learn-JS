@@ -57,3 +57,10 @@ function handleUser(error, user)
 
 getUserData(2, handleUser);
 getUserData(4, handleUser);
+
+//simple idea of asynchronous behaviour in js
+console.log("start");
+setTimeout(() => {
+    console.log("TimeOut Ended.")
+}, 5000);
+console.log("end");

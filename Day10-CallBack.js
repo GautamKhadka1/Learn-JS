@@ -68,4 +68,6 @@ console.log("end");
 
 //promise in js
 //promise is way to handle asynchronous operation in js
+//promise has 3 states PENDING, FULFILLED and REJECTED
+
 

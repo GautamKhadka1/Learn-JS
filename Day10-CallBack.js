@@ -1,4 +1,5 @@
 function calculate(x, y, callback)//this is asynchronous callback 
+// call back is simply used to pass function as parameter to function.
 {
     setTimeout(function(){
         console.log("Entered Values are "+x+" and "+y);
@@ -64,3 +65,7 @@ setTimeout(() => {
     console.log("TimeOut Ended.")
 }, 5000);
 console.log("end");
+
+//promise in js
+//promise is way to handle asynchronous operation in js
+

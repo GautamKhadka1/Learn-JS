@@ -45,7 +45,7 @@ function cleanKitchen(callback){
 function takeoutTrash(callback){
     setTimeout(() => {
     console.log("You take out the trash");
-    callback();}, 500);
+    callback();}, 5000);
 }
 
 walkDog(() => {

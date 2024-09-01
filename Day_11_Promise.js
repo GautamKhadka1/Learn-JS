@@ -55,9 +55,7 @@ walkDog(() => {
         })
     })
 })
-
 //now converting these into promise
-
 function walkDog1(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {

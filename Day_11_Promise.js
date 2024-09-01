@@ -45,7 +45,7 @@ function cleanKitchen(callback){
 function takeoutTrash(callback){
     setTimeout(() => {
     console.log("You take out the trash");
-    callback();}, 5000);
+    callback();}, 500);
 }
 
 walkDog(() => {
@@ -77,7 +77,7 @@ function cleanKitchen1(){
 function takeoutTrash1(){
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("You take out the trash2");}, 5000);
+            resolve("You take out the trash2");}, 500);
     });
 }
 

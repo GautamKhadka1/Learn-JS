@@ -17,7 +17,7 @@ function Sum(x,y) {
 }
 document.write("\nThe sum of is "+ d+"<br>");
 
-//Function Expression which means function can be assigned to variable as well as can be used in expressions aswell
+//Function Expression which means function can be assigned to variable as well as can be used in expressions as well
 
 var e = function (x,y) { return x*y; };//anonymous function
 var z = e(5,67);

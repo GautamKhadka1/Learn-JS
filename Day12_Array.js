@@ -1,5 +1,5 @@
 const person = [
-    {name:'Gautam', Age:12},
+    {name:'Gautam', Age:22},
     {name:'Hari', Age:22},
     {name:'Narayan', Age:32},
     {name:'Ribash', Age:70},
@@ -26,7 +26,7 @@ console.log(filterItem);
 //find returns object not an array
 const findItem = person.find((x) =>
 {
-    return x.name === "Gautam";
+    return x.Age === 22;
 })
 
 console.log(findItem);
@@ -60,10 +60,20 @@ console.log(number.toString());
 
 //flatmap method is used to create different array using existing array 
 const newArray = number.flatMap((x)=>[x+1]);
-newArray.splice(2,0,20);//1st param rep position to add 2nd param rep item to remove
+newArray.splice(2,0,25,100);//1st param rep position to add 2nd param rep item to remove
 console.log(newArray);
 //adding new element in middle of array 
+console.log(newArray.includes(25));
+const foundx= newArray.find((x) => {return x>3;})
+console.log(foundx);//find return first item that satisfies the condition 
 
+//sort method sorts numeric value as string so we need use comparision function to sort numeric value 
 
+console.log(newArray.sort());//see here
+console.log(newArray.toSorted((a,b) => a-b).toReversed())//this will solve above problem
+//the difference between sort and toSorted is that toSorted method sort without affecting main array
+
+//min max from ana array
+console.log(Math.max.apply(null, newArray));
 
 

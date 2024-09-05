@@ -56,5 +56,14 @@ const number = [3,1,5,6,9,7,8,2,4];
 number.push(0);
 number.sort();
 console.log("length of number array is " + number.length, number[0]);
+console.log(number.toString());
+
+//flatmap method is used to create different array using existing array 
+const newArray = number.flatMap((x)=>[x+1]);
+newArray.splice(2,0,20);//1st param rep position to add 2nd param rep item to remove
+console.log(newArray);
+//adding new element in middle of array 
+
+
 
 

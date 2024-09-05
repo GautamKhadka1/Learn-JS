@@ -37,3 +37,24 @@ person.forEach((item)=>
 {
     console.log(item.name + ", "  +item.Age);
 })
+//some method check the array and if any one match the condition it returns true
+//similar to some there is another method called every it check every item with condition if every item follows the condition then only its value is true
+
+const checkOld= person.some((item) =>
+{
+    return item.Age>50;
+})
+
+console.log(checkOld);
+//reduce method is 
+
+//simple array
+const number = [3,1,5,6,9,7,8,2,4];
+//some method of simple array
+
+//adding element in array
+number.push(0);
+number.sort();
+console.log("length of number array is " + number.length, number[0]);
+
+

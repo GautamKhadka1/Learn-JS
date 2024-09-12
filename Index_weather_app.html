@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="weather_app.css" type="text/css">
+     
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="main">
+        <div id="searchbar">
+               <input id="location" placeholder= "Enter Your Location"> <button id="search"><img src="weather_app_assests\search.png" id="searchimg"></button>
+        </div>
+        <div id="weather_container">
+            <img src="weather_app_assests\sunny.png" id="icon">
+            <div id="temp">0°C</div>
+            <div id="weather_text">Sunny</div>   
+            <div id="other">
+                <div id="humidity">
+                    <img src="weather_app_assests\humidity.png"class="wicon">
+                    <div>
+                        <span id="hum">51%</span>
+                        <div>Humidity</div>
+                    </div>
+                </div>
+                
+                <div id="wind">
+                    <img src="weather_app_assests\wind.png" class="wicon">
+                    <div>
+                        <span id="hum">51%</span>
+                        <div>Humidity</div>
+                    </div>
+                </div>
+            </div>     
+        </div>
+    </div>
+    <script src="weather_app.js"></script>
+</body>
+</html>

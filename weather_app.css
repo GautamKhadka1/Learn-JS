@@ -69,6 +69,25 @@ body{
 {
     text-align: center;
     display: flex;
-    /* justify-content: center;  */
-    /* align-items: center; */
+    justify-content: center; 
+    align-items: center;
+}
+#humidity 
+{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin:20px 10px;
+}
+#wind{
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin:20px 10px;
+}
+.left{
+    text-align: left;
+    margin-left: 10px;
 }

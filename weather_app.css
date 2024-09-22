@@ -46,7 +46,7 @@ body{
     background-color: rgb(226, 242, 255);
     width:280px;
 }
-#icon{
+#weather_icon{
     width: 150px;
 }
 #weather_container{

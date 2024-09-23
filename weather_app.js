@@ -6,7 +6,6 @@ const humidity = document.querySelector("#hum");
 const wind = document.querySelector("#win");
 const search = document.querySelector("#search");
 
-
 async function checkweather(x){
     const api_key = "e2bec2268c4e7ced754434d267736ea6";
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${x}&appid=${api_key}`;

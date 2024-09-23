@@ -18,47 +18,8 @@ async function checkweather(x){
     weather_text.innerHTML = a;
     humidity.innerHTML = weather_data.main.humidity + "%";
     wind.innerHTML = weather_data.wind.speed + "Km/h";
-    weather_icon.src= icon(a);
+    weather_icon.src= weather_data.weather[0].icon+".png";
     document.querySelector("#city").innerHTML= x;
-    
-}
-function icon(i){
-    switch (i){
-    case "clear sky":
-        return "sunny.png";
-        break;
-    case "few clouds":
-        return "partial.png";
-        break;
-    case "scattered clouds":
-        return "cloudy.png";
-        break;
-    case "broken clouds":
-        return "cloudy.png";
-        break;
-    case "shower rain":
-        return "rainy.png";
-        break;
-    case "rain":
-        return "rainy.png";
-        break;
-    case "thunderstorm":
-        return "thunder.png";
-        break;
-    case "snow":
-        return "snow.png";
-        break;
-    case "mist":
-        return "humid.png";
-        break;
-    case "overcast clouds":
-        return "cloudy.png";
-        break;
-    case "light rain":
-        return "rainy.png";
-        break;
-    }
-        
 }
 search.addEventListener('click',()=>{
     checkweather(input.value);

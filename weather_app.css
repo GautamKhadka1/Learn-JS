@@ -33,6 +33,7 @@ body{
     /* display: flex; */
     justify-content: center; 
     /* align-items: center; */
+    border-radius: 15px;
 }
 
 #searchbar{
@@ -90,4 +91,9 @@ body{
 .left{
     text-align: left;
     margin-left: 10px;
+}
+#locationicon{
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
